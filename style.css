@@ -1,0 +1,531 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: #fff;
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+
+
+}
+/*
+General rules
+*/
+
+.hero{
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    /* text-align: center; */
+    /* background-color: red; */
+}
+
+.name{
+    width: 60%;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    /* text-align: left; */
+}
+.name > h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+.showcase{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #ececec;
+    border-radius: 5px;
+
+}
+.text{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+.show-grid{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    /* align-items: center;
+    justify-content: space-evenly; */
+    
+}
+.show-grid-el> img {
+    width: 100%;
+    height: 100%;
+}
+.show-grid-el {
+    padding-right: 80px;
+}
+
+
+.text > h1 {
+    font-size: 1.8rem;
+}
+
+.about{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #ececec;
+    
+
+}
+
+
+.grid{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 500px);
+    gap: 10px;
+    
+    /* padding-left: 300px; */
+    
+}
+
+.grid-element{
+    width: 100%;
+    padding-left: 80px;
+}
+.my-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.my-image > img {
+    height: 140px;
+    /* margin-left: 150px;
+
+    margin-top: 20px; */
+    /* margin: 0 auto; */
+    border-radius: 50%;
+}
+.grid-element > h1{
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 10px;
+}
+.grid-element > h3 {
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding:40px
+}
+
+.technologies{
+    text-align: center;
+}
+.technologies >  h1{
+    font-size: 2.5rem;
+}
+.technologies > p {
+    font-size: 1.4rem;
+}
+
+
+.projects{
+    width: 80%;
+    height: auto;
+    margin: 100px auto;
+    padding: 50px;
+    text-align: center;
+    background-color: #ececec;
+
+
+}
+.projects > h1{
+    padding:30px;
+    font-size: 3rem;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 200px; */
+    padding-bottom: 40px;
+}
+.el{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.image-overlay{
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+
+
+.image-overlay > a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+.image-overlay-2{
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.image-overlay-2 > a{
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+.image-title{
+    color: #fff;
+}
+.image-title-2{
+    color: black;
+}
+.image-overlay:hover{
+    opacity: 1;
+}
+.image-overlay-2:hover{
+    opacity: 1;
+}
+
+.el > img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact{
+    width: 80%;
+    height: auto;
+    margin:0 auto;
+    margin-top: 100px;
+    background-color: #ececec;
+
+}
+
+.form{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* margin-top: 200px; */
+    /* background-color: blueviolet; */
+}
+.form > h1{
+    padding: 30px;
+    font-size: 2.7rem;
+}
+.my-form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.form-item  > label{
+    font-size: 1.5rem;
+}
+input[type='text']{
+    padding-left: 20px;
+    width: 40%;
+    height: 50px;
+    cursor: pointer;
+    outline-color: #ececec;
+    /* border-radius: 3px; */
+}
+input[type='email']{
+    padding:0 20px;
+    width: 40%;
+    height: 50px;
+    cursor: pointer;
+    outline-color: #ececec;
+}
+textarea{
+    width: 40%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    height: 100px;
+    cursor: pointer;
+    resize: none;
+    outline-color: #ececec;
+}
+textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.form-item > label{
+    display: block;
+    padding:10px;
+}
+.btn{
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 40%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+@media  screen and (max-width: 1300px ){
+    
+    
+    .name > h1 {
+        font-size: 2.8rem;
+    }
+    .text > h1{
+        font-size: 1.6rem;
+
+    }
+    .grid-element > h1{
+        font-size: 2.2rem;
+    }
+    .grid-element > h3{
+        font-size: 1.1rem;
+    }
+    .responsive > h1{
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    .technologies >  h1{
+        font-size: 2.2rem;
+    }
+    .technologies >  p{
+        font-size: 1.2rem;
+    }
+    .projects > h1{
+        font-size: 2.8rem;
+    }
+    .image-overlay{
+        font-size: 1.8rem;
+    }
+    .image-overlay-2{
+        font-size: 1.8rem;
+    }
+    .image-overlay > a{
+        font-size: 1.8rem;
+    }
+    .image-overlay-2 > a{
+        font-size: 1.8rem;
+    }
+    .form > h1{
+        font-size: 2.5rem;
+    }
+
+    
+}
+@media  screen and (max-width: 1200px ){
+
+    .name > h1 {
+        font-size: 2.5rem;
+    }
+    .text > h1{
+        font-size: 1.4rem;
+
+    }
+    .grid-element > h1{
+        font-size: 2rem;
+    }
+    .grid-element > h3{
+        font-size: 1rem;
+    }
+    
+    .responsive > h1{
+        font-size: 1.7rem;
+        
+    }
+    .technologies >  h1{
+        font-size: 2rem;
+    }
+    .technologies >  p{
+        font-size: 1rem;
+    }
+    .projects > h1{
+        font-size: 2.5rem;
+    }
+    .image-overlay{
+        font-size: 1.6rem;
+    }
+    .image-overlay-2{
+        font-size: 1.6rem;
+    }
+    .image-overlay > a{
+        font-size: 1.6rem;
+    }
+    .image-overlay-2 > a{
+        font-size: 1.6rem;
+    }
+    .form > h1{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 1050px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-element{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .grid-element > img{
+        margin: 0;
+        margin-left: 250px;
+        margin-top: 20px;
+    }
+}
+@media  screen and (max-width: 768px ){
+    
+    .text{
+        width: 80%;
+    }
+    #tablet{
+        display: none;
+    }
+    #phone{
+        display: none;
+    }
+    #laptop{
+        margin-left: 120px;
+    }
+    .name > h1 {
+        font-size: 2.2rem;
+    }
+    .text > h1{
+        font-size: 1.2rem;
+
+    }
+    .grid-element > h1{
+        font-size: 1.7rem;
+    }
+    /* .grid-element > h3{
+        font-size: 1rem;
+    } */
+    
+    .responsive > h1{
+        font-size: 1.7rem;
+        
+    }
+    .technologies >  h1{
+        font-size: 1.8rem;
+    }
+    .technologies >  p{
+        font-size: 1rem;
+    }
+    .projects > h1{
+        font-size: 2.2rem;
+    }
+    .image-overlay{
+        font-size: 1.3rem;
+    }
+    .image-overlay-2{
+        font-size: 1.3rem;
+    }
+    .image-overlay > a{
+        font-size: 1.3rem;
+    }
+    .image-overlay-2 > a{
+        font-size: 1.3rem;
+    }
+    .form > h1{
+        font-size: 2.2rem;
+    }
+    .form-item  > label{
+        font-size: 1.1rem;
+    }
+    
+    
+    
+
+}
+@media  screen and (max-width: 578px ){
+    
+    .name > h1 {
+        font-size: 2rem;
+    }
+    .text > h1{
+        font-size: 1rem;
+
+    }
+    .show-grid-el > img{
+        height: 80px;
+    }
+    .grid-element > h1{
+        font-size: 2.2rem;
+    }
+    .responsive > h1{
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    .el{
+        height: 50px;
+    }
+    .image-overlay{
+        font-size: 0.7rem;
+    }
+    .image-overlay-2{
+        font-size: 0.7rem;
+    }
+    .image-overlay > a{
+        font-size: 0.7rem;
+    }
+    .image-overlay-2 > a{
+        font-size: 0.7rem;
+    }
+    .form > h1{
+        font-size: 2rem;
+    }
+    input[type='text']{
+        width: 100%;
+    }
+    input[type='email']{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    
+}
